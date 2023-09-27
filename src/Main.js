@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
+import CartMenu from './scenes/global/CartMenu';
 import Checkout from './scenes/checkout/Checkout';
 import Confirmation from './scenes/checkout/Confirmation';
 import Home from './scenes/home/Home';
@@ -30,6 +31,7 @@ const Main = () => {
                 <Route path='checkout' element={<Checkout />} />
                 <Route path='checkout/success' element={<Confirmation />} />
             </Routes>
+            <CartMenu />
         </BrowserRouter>
     </div>
   )
