@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import CartMenu from './scenes/global/CartMenu';
 import Checkout from './scenes/checkout/Checkout';
 import Confirmation from './scenes/checkout/Confirmation';
+import Footer from './scenes/global/Footer';
 import Home from './scenes/home/Home';
 import ItemDetails from './scenes/itemDetails/ItemDetails';
 import Navbar from './scenes/global/Navbar';
@@ -32,9 +33,10 @@ const Main = () => {
                 <Route path='checkout/success' element={<Confirmation />} />
             </Routes>
             <CartMenu />
+            <Footer />
         </BrowserRouter>
     </div>
   )
 }
 
-export default Main
+export default Main;
