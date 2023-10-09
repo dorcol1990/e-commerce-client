@@ -55,7 +55,7 @@ const Item = ( { item, width}) => {
                 </Typography>
                 <IconButton onClick={()=>setCount(count + 1)}>
                 <AddIcon />
-                </IconButton>
+              </IconButton>
             </Box>
             <Button 
              onClick={()=>dispatch(addToCart({item: {...item, count}}))}
